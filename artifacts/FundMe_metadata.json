@@ -7,6 +7,11 @@
 		"abi": [
 			{
 				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
 				"name": "fund",
 				"outputs": [],
 				"stateMutability": "payable",
@@ -26,6 +31,19 @@
 						"internalType": "uint256",
 						"name": "",
 						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getChainlinkDataFeedLatestAnswer",
+				"outputs": [
+					{
+						"internalType": "int256",
+						"name": "",
+						"type": "int256"
 					}
 				],
 				"stateMutability": "view",
@@ -59,12 +77,20 @@
 		"remappings": []
 	},
 	"sources": {
-		"found-me.sol": {
-			"keccak256": "0xe5e80ebc612ea976f976f7f8a2cdc03c5a3fa1376d53853d9a18c732aa4f17a5",
+		"@chainlink/contracts/src/v0.8/interfaces/AggregatorV3Interface.sol": {
+			"keccak256": "0xfe4e8bb4861bb3860ba890ab91a3b818ec66e5a8f544fb608cfcb73f433472cd",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://eb3c0c806931f99d80d447f6a16007a0fe4935e33b459d8f2eee689126146395",
-				"dweb:/ipfs/QmTVMh9kxEDfhKMymv9JWBhgQriXz1KFuWGyDePtmhBbom"
+				"bzz-raw://644cff84052e1e82b5bb502b2a46e8f142a62b0db4cd9b38200798ba8373c6f7",
+				"dweb:/ipfs/QmTa99QHrJBn3SXDizquPBUiTxVCNKQrHgaWJhuds5Sce2"
+			]
+		},
+		"found-me.sol": {
+			"keccak256": "0xea539f56d415ce1e1a2861d7fe0f6a21effb4921af58b21652ba0b55d62a6da7",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://8848082abb0f541ab02958dd6f0ef88e31cf04132f5c138e142a67a97092a57b",
+				"dweb:/ipfs/QmVfwK5ZY1r4JaDZJw9yFDrF9DSzZFHNpqj2xxPGFgf8Et"
 			]
 		}
 	},
